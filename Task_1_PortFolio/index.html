@@ -1,11 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prasanna Kumar Mallick — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+
+<!-- ── NAV ── -->
+<nav id="mainNav">
+  <div class="nav-logo">Prasanna<span>.</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="home">
+  <div class="hero-bg-shape"></div>
+
+  <div class="hero-text reveal">
+    <div class="hero-eyebrow">Available for Hire</div>
+    <h1 class="hero-name">
+      Prasanna<br><span class="line2">Kumar Mallick</span>
+    </h1>
+    <p class="hero-tagline">
+      <strong>Full-Stack Developer</strong> skilled in React.js, Node.js, Express.js,
+      and MongoDB — building production-grade web and mobile applications.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View My Work →</a>
+      <a href="#contact" class="btn btn-outline">Let's Talk</a>
+    </div>
+  </div>
+
+  <div class="hero-image reveal">
+    <div class="hero-img-wrap">
+      <!-- Replace src with your own photo path e.g. ./assets/hero.jpg -->
+      <img
+        src="./asset/me.jpg"
+        alt="Prasanna Kumar Mallick"
+        class="hero-photo"
+      />
+    </div>
+  </div>
+
+  <div class="hero-stats reveal">
+    <div class="stat-item">
+      <div class="stat-num">1<span>+</span></div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">5<span>+</span></div>
+      <div class="stat-label">Projects Done</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">250<span>+</span></div>
+      <div class="stat-label">Problems Solved</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-image-col reveal">
+    <div class="about-img-frame">
+      <!-- Replace src with your own photo path e.g. ./assets/about.jpg -->
+      <img
+        src="./asset/me.jpg"
+        alt="About Prasanna Kumar Mallick"
+        class="about-photo"
+      />
+    </div>
+    <div class="about-img-badge">
+      <div class="big">B.Tech</div>
+      <div class="small">CSE Graduate</div>
+    </div>
+  </div>
+
+  <div class="about-text reveal">
+    <div class="section-tag">About Me</div>
+    <h2 class="section-title">Developer.<br><em>Builder.</em> Problem Solver.</h2>
+    <p class="section-desc">
+      I'm a Full-Stack Developer skilled in React.js, Node.js, Express.js, and MongoDB,
+      with hands-on experience building production-grade applications. I graduated with a
+      B.Tech in Computer Science and Engineering (CGPA: 8.2/10) from GIET, BPUT University,
+      and am currently contributing as a Frontend Developer Intern at Proexima AI Products
+      and Solutions, delivering responsive, cross-browser interfaces with measurable
+      performance improvements.
+    </p>
+    <ul class="about-list">
+      <li>Building full-stack MERN applications with CI/CD pipelines</li>
+      <li>Developing real-time features using Socket.IO</li>
+      <li>Creating responsive, pixel-perfect UI components</li>
+      <li>Solving 250+ coding problems on LeetCode, HackerRank & more</li>
+    </ul>
+    <a href="#resume" class="btn btn-primary">Download Resume →</a>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="reveal">
+    <div class="section-tag">What I Do</div>
+    <h2 class="section-title">Core <em>Skills</em></h2>
+    <p class="section-desc">A curated set of technologies and disciplines I've worked with professionally.</p>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">⚛️</div>
+      <h3>Frontend Development</h3>
+      <p>HTML5, CSS3, JavaScript, React.js, Tailwind CSS — building responsive, pixel-perfect interfaces.</p>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">🛠️</div>
+      <h3>Backend Development</h3>
+      <p>Node.js, Express.js, REST APIs — designing robust server-side architecture and services.</p>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:82%"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">🗄️</div>
+      <h3>Database & Storage</h3>
+      <p>MongoDB, Mongoose, Cloudinary — managing data and media storage efficiently.</p>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:78%"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">🔄</div>
+      <h3>Real-Time Features</h3>
+      <p>Socket.IO for live chat, online status indicators, and real-time typing notifications.</p>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:75%"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">⚙️</div>
+      <h3>State Management</h3>
+      <p>Redux Toolkit & Zustand — managing complex global state across large-scale applications.</p>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:80%"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">🚀</div>
+      <h3>DevOps & Deployment</h3>
+      <p>Git, GitHub, Render CI/CD pipelines — streamlining delivery and version control workflows.</p>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:72%"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="reveal">
+    <div class="section-tag">My Work</div>
+    <h2 class="section-title">Featured <em>Projects</em></h2>
+    <p class="section-desc">A selection of production-grade MERN stack applications I've built.</p>
+  </div>
+
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <img src="./asset/proj1.png" alt="LUXE E-Commerce Platform" class="project-img" />
+      </div>
+      <div class="project-body">
+        <span class="project-tag">E-Commerce</span>
+        <h3 class="project-title">LUXE — E-Commerce Platform</h3>
+        <p class="project-desc">Full-stack MERN app with 30+ product listings, wishlist, cart, and secure checkout. Built with Redux Toolkit for state management and Tailwind CSS + daisyUI, reducing custom CSS by 25–30%. CI/CD via GitHub + Render.</p>
+        <a href="https://pkart-s4i4.onrender.com" target="_blank" class="project-link">View Project ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <img src="./asset/proj3.png" alt="ConneXo Social Media Platform" class="project-img" />
+      </div>
+      <div class="project-body">
+        <span class="project-tag">Social Platform</span>
+        <h3 class="project-title">ConneXo — Social Media Platform</h3>
+        <p class="project-desc">Real-time social media platform with live chat, posts, likes, and user insights using Socket.IO. Features Zustand state management and modular components — maintained with 80+ Git commits across frontend and backend.</p>
+        <a href="https://chat-io-bjln.onrender.com" target="_blank" class="project-link">View Project ↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── RESUME ── -->
+<section id="resume">
+  <div class="resume-inner">
+    <div class="section-tag">Resume</div>
+    <h2 class="section-title">My <em>Credentials</em></h2>
+    <p class="section-desc">B.Tech CSE graduate with hands-on MERN stack experience, an active internship, and a passion for building real-world applications.</p>
+
+    <div class="resume-card reveal">
+      <div class="resume-icon">📄</div>
+      <h3>Prasanna Kumar Mallick — Resume 2026</h3>
+      <p>Full-Stack Developer • Frontend Developer Intern @ Proexima AI<br>PDF · Last updated 2025</p>
+      <a href="./asset/Prasanna_FullStack_dev.pdf" download class="btn btn-primary">⬇ Download Resume PDF</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="contact-header reveal">
+    <div class="section-tag">Get In Touch</div>
+    <h2 class="section-title">Let's <em>Work</em> Together</h2>
+    <p class="section-desc">Open to freelance projects, collaborations, and full-time opportunities. Reach out through any channel below.</p>
+  </div>
+
+  <div class="contact-cards reveal">
+    <div class="contact-card">
+      <div class="cc-icon-wrap">📧</div>
+      <div class="cc-label">Email</div>
+      <div class="cc-value">prasan543e@gmail.com</div>
+      <a href="mailto:prasan543e@gmail.com" class="cc-action">Send Email ↗</a>
+    </div>
+    <div class="contact-card">
+      <div class="cc-icon-wrap">📞</div>
+      <div class="cc-label">Phone</div>
+      <div class="cc-value">+91 77352 21038</div>
+      <a href="tel:+917735221038" class="cc-action">Call Now ↗</a>
+    </div>
+    <div class="contact-card">
+      <div class="cc-icon-wrap">💼</div>
+      <div class="cc-label">GitHub</div>
+      <div class="cc-value">github.com/prasan-RKP</div>
+      <a href="https://github.com/prasan-RKP" target="_blank" class="cc-action">View GitHub ↗</a>
+    </div>
+    <div class="contact-card">
+      <div class="cc-icon-wrap">🕐</div>
+      <div class="cc-label">Availability</div>
+      <div class="cc-value">Bhubaneswar, Odisha, India</div>
+      <span class="cc-badge">Open to Work</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-logo">Prasanna<span>.</span></div>
+  <p>© 2025 Prasanna Kumar Mallick. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('navLinks').classList.remove('open');
+    });
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
